@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
-    <title>Inicio-Películas para ti</title>
+    <title>Inicio - Películas para ti</title>
 </head>
 <body>
     <header>
@@ -14,38 +16,177 @@
             </section>
 
             <nav>
-                <ul>
-                    <li><a href="home.html">Inicio</a></li>
+                <ul class="ul-header">
+                    <li class="li-header"><a href="home.html">Inicio</a></li>
                     <li><a href="registro.html">Registro</a></li>
                 </ul>
             </nav>
     </header>
 
-    <div id="formulario" class="contenedor">
-        <form>
-            <fieldset>
-                <h2>Formulario de registro</h2>
-                <br>
-                <label for="nombre">Nombre: </label>
-                <input type="name" id="user-name"/><br>
-
-                <label for="apellido">Apellido: </label>
-                <input type="name" id="user-lastname"/><br>
-
-                <label for="telefono">Teléfono: </label>
-                <input type="number" id="user-phone" /><br>
-
-                <label for="direccion">Dirección: </label>
-                <input type="text" id="user-adress" /><br>
+<!-- Contenedor y lo demás necesario para el slider -->
+    <div class="container-slider">
                 
-                <label for="comentario">Observaciones:</label><br/>
-                <textarea id="comentario" name="comentario" rows="4.5" cols="30">                   
-                </textarea>
-                <br>
-                <input type="button" id="boton-enviar" value="Enviar">
+        <div class="slider" id="slider">
 
-        </fieldset>
-        </form>
+            <div class= "slider__section"> <img src="img/hp1.jpg" id="slide1" class="slider__img"> </div>
+            <div class= "slider__section"> <img src="img/hp2.jpeg" id="slide2" class="slider__img"> </div> 
+            <div class= "slider__section"> <img src="img/hp3.jpg" id="slide3" class="slider__img"> </div>
+            <div class= "slider__section"> <img src="img/hp4.jpg" id="slide4" class="slider__img"> </div>
+            <div class= "slider__section"> <img src="img/hp5.jpg" id="slide5" class="slider__img"> </div>
+            <div class= "slider__section"> <img src="img/hp6.jpg" id="slide6" class="slider__img"> </div>
+                                
+        </div>
+
+        <button class="carousel_button carousel_button-left" id="btn-left">&#10094</button>
+        <button class="carousel_button carousel_button-right" id="btn-right">&#10095</button>
+
+
     </div>
+
+<!-- miniaturas-->
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/hp1.jpg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y la Piedra filosofal</p>
+      <a href="#" class="cta1" id="movie1">+</a>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/hp2.jpeg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y cámara secreta</p>
+      <a href="#" class="cta2" id="movie2">+</a>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/hp4.jpg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y el prisionero de Azkaban</p>
+      <a href="#" class="cta3" id="movie3">+</a>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/hp3.jpg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y el cáliz de fuego</p>
+      <a href="#" class="cta4" id="movie4">+</a>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/hp5.jpg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y el príncipe mestizo</p>
+      <a href="#" class="cta5" id="movie5">+</a>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/hp6.jpg" style="width:100%" alt="hp">
+      <p class="movie-info">Harry Potter y las reliquias de la muerte</p>
+      <a href="#" class="cta6" id="movie6">+</a>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Menú emergente de las miniaturas -->
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">
+      <div id="info-movie1">
+        <h2>Datos:</h2>
+        <p>Título original: Harry Potter and the Sorcerer's Stone</p>
+        <p>Año: 2001 </p>
+        <p> Calificación IMDb 7.6/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: Chris Columbus</p>
+        <a href=https://www.youtube.com/watch?v=VyHV0BRtdxo> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">
+      <div id="info-movie2">
+        <h2>Datos:</h2>
+        <p>Título original: Harry Potter and the Chamber of Secrets </p>
+        <p>Año: 2002 </p>
+        <p> Calificación IMDb 7.4/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: Chris Columbus</p>
+        <a href=> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">      
+      <div id="info-movie3">
+        <h2>Datos:</h2>
+        <p>Título original: Harry Potter and the Prisoner of Azkaban</p>
+        <p>Año: 2004 </p>
+        <p> Calificación IMDb 7.9/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: Alfonso Cuarón</p>
+        <a href=> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">         
+      <div id="info-movie4">
+        <h2>Datos:</h2>
+        <p>Título original: Harry Potter and the Goblet of Fire</p>
+        <p>Año: 2005 </p>
+        <p> Calificación IMDb 7.7/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: Mike Newell</p>
+        <a href=> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">  
+      <div id="info-movie5">
+        <h2>Datos:</h2>
+        <br>
+        <p>Título original: Harry Potter and the Half-Blood Prince</p>
+        <p>Año: 2009 </p>
+        <p> Calificación IMDb 7.6/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: David Yates</p>
+        <a href=> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" id="modal_container">
+  <div class="modal modal-close">
+    <p class="close">X</p>
+    <div class="modal-textos">  
+      <div id="info-movie6">
+        <h2>Datos:</h2>
+        <p>Título original: Harry Potter and the Deathly Hallows: Part 2</p>
+        <p>Año: 2011 </p>
+        <p> Calificación IMDb 8.1/10 <i class="material-icons"> star_rate </i>  </p>
+        <p> Dirección: David Yates</p>
+        <a href=> Ver tráiler </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/carousel.js"></script>
+<script src="js/registro.js"></script>
 </body>
 </html>

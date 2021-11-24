@@ -8,6 +8,46 @@
     <title>Registro-Películas para ti</title>
 </head>
 <body>
-    
+    <header>
+        <section>
+            <p id="logo1">Logo</p>
+        </section>
+
+        <nav>
+            <ul class="ul-header">
+                <li class="li-header"><a href="home.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div id="formulario" class="contenedor">
+    <form>
+        <fieldset>
+            <h2>Formulario de registro</h2>
+            <br>
+            <label for="nombre">Nombre: </label>
+            <input type="name" id="user-name"/><br>
+
+            <label for="apellido">Apellido: </label>
+            <input type="name" id="user-lastname"/><br>
+
+            <label for="telefono">Teléfono: </label>
+            <input type="number" id="user-phone" /><br>
+
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="user-adress" /><br>
+            
+            <label for="comentario">Observaciones:</label><br/>
+            <textarea id="comentario" name="comentario" rows="4.5" cols="30">                   
+            </textarea>
+            <br>
+            <input type="button" id="boton-enviar" value="Enviar">
+
+    </fieldset>
+    </form>
+</div> 
+
+<script src="js/registro.js"></script>
 </body>
 </html>

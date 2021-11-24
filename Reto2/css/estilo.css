@@ -24,16 +24,16 @@ header {
     margin-top: 5px;
 }
 
-ul{
+.ul-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
     width: 180px;
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
-li {
+.li-header {
     padding: 10px;
     font-size: 18px;
     align-items: flex-end;
@@ -67,3 +67,166 @@ input, textarea{
     border-radius: 5px;
     border: 1px solid rgb(51, 204, 110);
 }
+
+/* Slider de imágenes */
+
+.container-slider {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #ffff,
+                0 15px 50px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.slider {
+    display: flex;
+    width: 600%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    max-height: fit-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 50%;
+    background: rgba(46, 44, 44, 0.192);
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel_button:hover{
+    background-color: white;
+}
+
+.carousel_button-left {
+left: 10px;
+}
+
+.carousel_button-right {
+right: 10px;
+}
+
+
+/* Miniaturas */
+
+.movie-info{
+    font-size: 12px;
+    text-align: center;
+    font-style: italic; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 15px ;
+  }
+  
+  /* 6 columnas juntas */
+  .column {
+    float: left;
+    width: 16.66%;
+    padding-left: 7px;
+  }
+  
+  .demo {
+    opacity: 0.6;
+    margin-top: 15px;
+    height: 100px;
+  }
+  
+  .active, .demo:hover {
+    opacity: 1;
+  }
+
+  /* Estilo de modal (pop-up) */
+  .modal-textos {
+      font-size: 30px;
+  }
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%) ;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.cta1, .cta2, .cta3, .cta4, .cta5, .cta6{
+    display: inline-block;
+    width: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    margin-left: 40%;
+}
+
+.modal-textos {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+}
+.material-icons{
+    color: gold;
+}
+.modal-close{
+    transform: translateY(-200%)
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    display: inline-block;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
